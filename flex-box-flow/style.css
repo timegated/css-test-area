@@ -9,22 +9,24 @@ header {
     justify-content: center;
     color: #FFF8DC;
 }
+
 footer {
     display: flex;
     justify-content: center;
     background: #D2B48C;
 }
+
 section {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     flex: 200px;
 }
 
-.section-article {
-    width: 250px;
-    height: 500px;
+article {
+    flex: 200px;
     padding: 10px;
-    margin: .5rem auto;
+    margin: .5rem;
     background: #87CEFA;
     border: 1px solid #00BFFF;
 }
