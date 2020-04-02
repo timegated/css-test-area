@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: border-box;
+}
+
+.margins {
+    width: 100%;
+    height: 250px;
+    border: 3px solid blue;
+}
+
+/* Setting the margin bottom of the top paragraph to a negative value will bring the bottom p closer since margins are combined */
+
+.margin-one {
+    margin-left: .5rem;
+    margin-bottom: -30px;
+    width: 50%;
+    border: 2px solid purple;
+    background: grey;
+}
+
+.margin-two {
+    margin-left: .5rem;
+    width: 50%;
+    border: 2px solid purple;
+    margin-top: 50px;
+    background: grey;
+}

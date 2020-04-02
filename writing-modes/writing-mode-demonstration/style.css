@@ -1,0 +1,25 @@
+.flex-wrapper {
+    display: flex;
+    margin-left: .5rem;
+}
+
+.container-one {
+    margin-right: .5rem;
+    border: 1px solid lightgray;
+    width: 100%;
+    height: auto;
+    writing-mode: horizontal-tb;
+}
+
+.container-two {
+    border: 1px solid lightgray;
+    width: 100%;
+    height: auto;
+    writing-mode: vertical-rl;
+}
+
+.text-container {
+    display: block;
+    margin: auto;
+    width: 25%;
+}
