@@ -1,0 +1,27 @@
+ul>li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+ul>li>a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a[href='#example'] {
+    background: yellow;
+    color: black
+}
+
+a[href='#contact'] {
+    background: grey;
+    font-size: 24px;
+}
+
+a[href='#about'] {
+    background: purple;
+    font-family: sans-serif;
+}
