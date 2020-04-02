@@ -1,3 +1,16 @@
+/* Container Styling */
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Flexbox */
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling a nav */
 ul>li {
     list-style: none;
     display: inline-block;
@@ -24,4 +37,25 @@ a[href='#contact'] {
 a[href='#about'] {
     background: purple;
     font-family: sans-serif;
+}
+
+/* Selecting the first line of a p element */
+
+p::first-line {
+    background: yellow;
+}
+
+article > p {
+    margin-left: 2rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 350px;
+    }
+    .flex-wrapper {
+        flex-direction: column;
+    }
 }
