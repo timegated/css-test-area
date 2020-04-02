@@ -22,11 +22,20 @@ section {
     flex-wrap: wrap;
     flex: 200px;
 }
-
+/* Fleixble Sizing with flex: 1 */
 article {
-    flex: 200px;
+    /* flex: 200px; */
+    flex: 1 200px;
     padding: 10px;
     margin: .5rem;
     background: #87CEFA;
     border: 1px solid #00BFFF;
+}
+
+article:nth-of-type(3) {
+    flex: 2 200px;
+}
+
+article:hover {
+    background: #ADD8E6;
 }
