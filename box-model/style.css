@@ -1,0 +1,36 @@
+html {
+    /* Box sizing determines whether or not padding and margin are added to the total dimensions of the box */
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+.block {
+    margin-top: .5rem;
+    display: inline-block;
+    border: 1px solid purple;
+    padding: .5rem;
+    width: 500px;
+    height: 350px;
+}
+
+li {
+    border: 1px solid green;
+    padding: .5rem;
+}
+
+li:nth-child(2) {
+    margin-left: .5rem;
+}
+
+li:nth-child(3) {
+    margin-left: .5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
