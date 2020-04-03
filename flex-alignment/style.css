@@ -4,6 +4,8 @@ body {
     width: 70%;
 }
 
+/* Basic way to set up a list of links/buttons/navbar on a page */
+
 div {
     height: 100px;
     border: 1px solid black;
@@ -17,6 +19,10 @@ button {
     line-height: 1.5;
     width: 15%;
 }
+
+/* Order can be set on child elements of the div with display of flex */
+/* A positive value of 1 will push the element to the end of the list */
+/* A negative value will set the item to the front of the list */
 
 button:first-child {
     order: 1;
