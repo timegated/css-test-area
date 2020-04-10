@@ -4,6 +4,9 @@
 
 .grid-container {
     background: lightgrey;
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 .main-content {
