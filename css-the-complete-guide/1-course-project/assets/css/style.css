@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+.main-header {
+    background: #2c2c2c;
+}
+.main-header__title > a {
+    color: #efefef;
+    text-decoration: none;
+}
+.main-nav__items> li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-nav__items> li > a {
+    text-decoration: none;
+    color: #efefef;
+}
