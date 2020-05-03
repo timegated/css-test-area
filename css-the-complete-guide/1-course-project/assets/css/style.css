@@ -1,19 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&display=swap");
+
 * {
     box-sizing: border-box;
 }
-.main-header {
-    background: #2c2c2c;
+
+html {
+    height: 100%;
 }
-.main-header__title > a {
+
+body {
+    height: 100%;
+}
+
+.main-header {
+    height: 10%;
+    background: #2c2c2c;
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+}
+
+.main-header__title>a {
     color: #efefef;
     text-decoration: none;
 }
-.main-nav__items> li {
+
+.main-nav__items>li {
     display: inline-block;
     padding: 20px;
 }
 
-.main-nav__items> li > a {
+.main-nav__items>li>a {
     text-decoration: none;
     color: #efefef;
+}
+
+section {
+    height: 45%;
+    background: #2ceD;
+    color: #efefef;
+    font-family: 'Montserrat', sans-serif;
 }
