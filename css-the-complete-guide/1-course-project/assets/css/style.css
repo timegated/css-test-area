@@ -12,6 +12,13 @@ body {
     height: 100%;
 }
 
+main {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Anton', sans-serif;
+}
+
 .main-header {
     height: 10%;
     background: #2c2c2c;
@@ -34,9 +41,16 @@ body {
     color: #efefef;
 }
 
-section {
-    height: 45%;
+.product-overview {
+    height: 20%;
     background: #2ceD;
-    color: #efefef;
+    color: #2c2c2c;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plans {
+    height: 30%;
+    background: #2ddf5c;
+    color: #2c2c2c;
     font-family: 'Montserrat', sans-serif;
 }
