@@ -15,15 +15,38 @@ input[type="checkbox"] {
 aside {
     background: #a60000;
     color: white;
-    width: 340px;
+    width: 50%;
     height: 100%;
     padding: 0 20px;
     position: fixed;
     top: 0;
-    right: -370px;
+    right: -400px;
     transition: 0.6s all;
 }
+/* aside larger screens */
+@media screen and (min-width: 1400px) and (max-width: 2570px) {
+    aside {
+        right: -1000px;
+        width: 30%;
+        color: green;
+    }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    aside {
+        right: -600px;
+        width: 50%;
+        color: orange;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    aside {
+        width: 50%;
+        right: -400px;
+        color: black;
+    }
+}
 input[type=checkbox]:checked + aside {
     right: 0px;
 }
