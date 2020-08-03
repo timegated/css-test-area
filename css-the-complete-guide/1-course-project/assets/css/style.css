@@ -9,13 +9,14 @@ html, body {
     font-family: 'Anton', sans-serif;
     margin: 0;
     padding: 0;
-    background:#4DE1FF;
+    background:#efefef;
 }
 
 /* Main Menu */
 .main-header {
     background: #4DE1FF;
     padding: 0.5rem;
+    width: 100%;
 }
 
 /* display props for logo and nav */
@@ -23,23 +24,54 @@ html, body {
     display: inline-block;
 }
 
-.main-nav {
-    display: inline-block;
-}
 .main-header__logo a {
     color: #2c2c2c;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 1.5rem;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 10rem);
+}
+
+.main-nav__items {
+    list-style: none;
 }
 
 .main-nav__item {
     display: inline-block;
 }
 
-a {
+.main-nav__item a {
     text-decoration: none;
     font-size: 1.3rem;
+    color: #000;
+    padding: 0.5rem;
+    transition: all 0.6s ease;
+}
+
+/* call-to-action button */
+.main-nav__item--cta a {
+    background: grey;
+    color: #efefef;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+.main-nav__item a:hover {
+    color: #efefef;
+    background: #000;
+    border-bottom: 2px solid white;
+}
+a.active {
+    background: pink;    
 }
 /* Main Content */
-
 main {
     font-family: 'Anton', sans-serif;
     height: 100%;
@@ -50,18 +82,70 @@ main {
     background: #2ceD;
     border: 5px solid #000;
     color: #2c2c2c;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
     padding: 20px;
     width: 100%;
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .plans {
     background: #2ddf5c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: #2c2c2c;
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
+    margin-top: 0.5rem;
     border: 2px solid black;
     width: 100%;
     border-radius: 10px;
+}
+
+.plan-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px) {
+    .plan-cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+article {
+    flex: 1 0 25%;
+    text-align: center;
+    background: lightgrey;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+article ul {
+    list-style: none;
+}
+
+article button {
+    margin: auto;
+}
+
+.plans-recommended__cta {
+    background: rgba(49, 88, 56, 0.747);
+    flex: 1 0 35%;
+}
+
+.plans-recommended__cta h1 {
+    font-size: 24px;
+    color: #efefef;
+}
+
+.plans-price {
+    font-weight: bold;
+    color: ;
 }

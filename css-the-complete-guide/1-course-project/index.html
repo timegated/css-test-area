@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>uHost</title>
 </head>
+
 <body>
     <!--Using BEM (Block Element Modifier) specification for class names-->
     <header class="main-header">
@@ -16,18 +18,60 @@
             <ul class="main-nav__items">
                 <li class="main-nav__item"><a href="">Packages</a></li>
                 <li class="main-nav__item"><a href="">Customers</a></li>
-                <li class="main-nav__item"><a href="">Start Hosting</a></li>
+                <li class="main-nav__item main-nav__item--cta"><a href="">Start Hosting</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="product-overview">
-            <h1>Get the freedom you deserve</h1>
+            <h1>Get the freedom you deserve.</h1>
         </section>
         <section class="plans">
-            <h1>Choose your plan</h1>
+            <h1 class="section-title">Choose your plan</h1>
             <p>Make sure you get the most for your money</p>
+            <div class="plan-cards">
+                <article>
+                    <h1>Free</h1>
+                    <h2>0$/Month</h2>
+                    <h3>Free Hosting Plan</h3>
+                    <ul>
+                        <li>5 Work Spaces</li>
+                        <li>5GB Data</li>
+                        <li>No Support!</li>
+                    </ul>
+                    <div>
+                        <button>CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article class="plans-recommended__cta">
+                    <h1>Recommended</h1>
+                    <h2><span class="plans-price">29$/Month</span></h2>
+                    <h3>Recommended Hosting Plan</h3>
+                    <ul>
+                        <li>10 Work Spaces</li>
+                        <li>50GB Data</li>
+                        <li>Some Support!</li>
+                    </ul>
+                    <div>
+                        <button>CHOOSE PLAN</button>
+                    </div>
+                </article>
+                <article>
+                    <h1>Premium Preferred Ultimate Plan</h1>
+                    <h2>50$/Month</h2>
+                    <h3>Premium Hosting Plan</h3>
+                    <ul>
+                        <li>50 Work Spaces</li>
+                        <li>500GB Data</li>
+                        <li>All The Support!</li>
+                    </ul>
+                    <div>
+                        <button>CHOOSE PLAN</button>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 </body>
+
 </html>
