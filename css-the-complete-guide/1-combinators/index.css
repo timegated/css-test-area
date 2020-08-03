@@ -1,0 +1,25 @@
+#title-text {
+  color: #FDC100;
+  font: sans-serif;
+}
+
+code {
+  font-family: monospace;
+  font-size: 16px;
+  color: red;
+}
+
+.highlighted-code {
+  color: green;
+}
+
+li + li {
+  background: #000;
+  color: #efefef;
+}
+
+ol > li {
+  background: #000;
+  color: #efefef;
+  padding: 2rem;
+}

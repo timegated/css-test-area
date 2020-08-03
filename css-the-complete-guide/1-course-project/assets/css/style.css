@@ -4,53 +4,64 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     height: 100%;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#4DE1FF;
 }
 
-body {
-    height: 100%;
+/* Main Menu */
+.main-header {
+    background: #4DE1FF;
+    padding: 0.5rem;
 }
+
+/* display props for logo and nav */
+.main-header__logo {
+    display: inline-block;
+}
+
+.main-nav {
+    display: inline-block;
+}
+.main-header__logo a {
+    color: #2c2c2c;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+/* Main Content */
 
 main {
+    font-family: 'Anton', sans-serif;
     height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Anton', sans-serif;
-}
-
-.main-header {
-    height: 10%;
-    background: #2c2c2c;
-    font-family: 'Anton', sans-serif;
-    padding: 10px;
-}
-
-.main-header__title>a {
-    color: #efefef;
-    text-decoration: none;
-}
-
-.main-nav__items>li {
-    display: inline-block;
-    padding: 20px;
-}
-
-.main-nav__items>li>a {
-    text-decoration: none;
-    color: #efefef;
 }
 
 .product-overview {
-    height: 20%;
+    height: 528px;
     background: #2ceD;
+    border: 5px solid #000;
     color: #2c2c2c;
     font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .plans {
-    height: 30%;
     background: #2ddf5c;
     color: #2c2c2c;
     font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 10px;
 }
