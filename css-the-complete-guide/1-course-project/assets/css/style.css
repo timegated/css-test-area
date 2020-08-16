@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&display=swap");
 
-* {
+*, 
+*:before, 
+*:after {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
     font-family: 'Anton', sans-serif;
     margin: 0;
     padding: 0;
@@ -68,9 +69,40 @@ html, body {
     background: #000;
     border-bottom: 2px solid white;
 }
+
 a.active {
     background: pink;    
 }
+
+/* Footer */
+.main-footer {
+    background: orange;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: #efefef;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
+
 /* Main Content */
 main {
     font-family: 'Anton', sans-serif;
@@ -79,7 +111,6 @@ main {
 
 .product-overview {
     height: 528px;
-    background: #2ceD;
     border: 5px solid #000;
     color: #2c2c2c;
     font-family: 'Anton', sans-serif;
@@ -87,18 +118,15 @@ main {
     padding: 20px;
     width: 100%;
     border-radius: 10px;
-    margin-top: 1rem;
 }
 
 .plans {
-    background: #2ddf5c;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: #2c2c2c;
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
-    margin-top: 0.5rem;
     border: 2px solid black;
     width: 100%;
     border-radius: 10px;
@@ -107,8 +135,7 @@ main {
 .plan-cards {
     display: flex;
     flex-direction: row;
-    text-align: center;
-    align-self: center;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 319px) and (max-width: 767px) {
@@ -118,34 +145,130 @@ main {
     }
 }
 
-article {
+.plan {
     flex: 1 0 25%;
     text-align: center;
     background: lightgrey;
     border-radius: 10px;
     margin: 0.5rem;
     padding: 0.5rem;
+    box-shadow: 2px 2px 2px #000;
+
 }
 
-article ul {
+.plan__features {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-article button {
-    margin: auto;
+.plan__feature {
+    font-size: 18px;
 }
+
+.plan__button {
+    border-radius: 10px;
+    padding: 1em;
+    font-weight: 700;
+    background: orange;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.plan__button:hover {
+    background: orangered;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.plan__button:focus {
+    outline: none;
+}
+/* Recommended Plans */
 
 .plans-recommended__cta {
-    background: rgba(49, 88, 56, 0.747);
+    background: rgba(16, 114, 34, 0.747);
     flex: 1 0 35%;
-}
-
-.plans-recommended__cta h1 {
-    font-size: 24px;
     color: #efefef;
+    box-shadow: 2px 2px 2px #000;
+    border-radius: 10px;
 }
 
-.plans-price {
+.plans-recommended__button {
+    border-radius: 10px;
+    padding: 1em;
     font-weight: bold;
-    color: ;
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.plans-recommended__button:hover {
+    border-radius: 10px;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0.5em;
+    background: #000;
+    color: #efefef;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.plans-recommended__button:focus {
+    outline: none;
+}
+
+.plans-recommended__title {
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #efefef;
+    color: #19b873;
+    max-width: 50%;
+    margin: 0.5em auto;
+    box-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
+}
+
+/* Key Features */
+
+#key-features {
+    background: orangered;
+    margin: 0;
+}
+
+#key-features .section-title {
+    text-align: center;
+    color: #efefef;
+    letter-spacing: 0.01em;
+    font-family: sans-serif;
+    font-size: 32px;
+}
+
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.key-feature {
+    display: inline-block;
+    margin: 0.5em;
+    font-size: 24px;
+    vertical-align: top;
+}
+
+.key-feature__description {
+    text-align: center;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 50%;
 }
